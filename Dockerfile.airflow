@@ -1,0 +1,9 @@
+# Airflow와 Python이 포함된 기반 이미지입니다. compose의 airflow 서비스가 이 파일로 이미지를 빌드합니다.
+FROM apache/airflow:3.3.1-python3.12
+# 의존성을 설치할 때 Airflow 버전도 고정해 의존성 해결 과정에서 다른 버전으로 바뀌지 않게 합니다.
+
+# Docker 이미지 빌드 중 설치하는 명령입니다. 컨테이너를 켤 때마다 재설치하는 명령이 아닙니다.
+# --no-cache-dir는 pip 다운로드 캐시를 이미지에 남기지 않게 하여 크기를 줄입니다.
+# 프로젝트 코드는 이미지에 COPY하지 않고 compose의 /app 마운트로 제공합니다.
+RUN pip install --no-cache-dir "apache-airflow==3.3.1" "psycopg[binary]>=3.2,<4" "beautifulsoup4>=4.13,<5" "numpy>=2,<3" "pandas>=2.2,<4"
+

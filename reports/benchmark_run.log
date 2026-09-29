@@ -1,0 +1,36 @@
+{
+  "rows": 200000,
+  "summary": [
+    {
+      "engine": "pandas_eager",
+      "median_seconds": 0.039318625000305474,
+      "peak_rss_mib": 144.984375
+    },
+    {
+      "engine": "pandas_chunks",
+      "median_seconds": 0.03971720801200718,
+      "peak_rss_mib": 121.109375
+    },
+    {
+      "engine": "polars_eager",
+      "median_seconds": 0.027008958044461906,
+      "peak_rss_mib": 113.25
+    },
+    {
+      "engine": "polars_lazy",
+      "median_seconds": 0.007251167087815702,
+      "peak_rss_mib": 102.078125
+    },
+    {
+      "engine": "polars_parquet",
+      "median_seconds": 0.004047124995850027,
+      "peak_rss_mib": 89.203125
+    },
+    {
+      "engine": "dask",
+      "median_seconds": 0.05455104191787541,
+      "peak_rss_mib": 188.3125
+    }
+  ],
+  "all_results_equal": true
+}

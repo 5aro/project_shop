@@ -1,0 +1,5 @@
+{
+  "rows": 100000,
+  "promotion_mismatch": 0,
+  "crud_rollback_passed": true
+}

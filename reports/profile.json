@@ -1,0 +1,295 @@
+{
+  "structured": {
+    "rows": 6000,
+    "mean": 33841.5,
+    "median": 28000.0,
+    "p95": 80000.0,
+    "skew": 0.8334710912723681,
+    "top_10pct_products_order_share": 0.125,
+    "shapiro": {
+      "w": 0.9210112017160603,
+      "p_value": 2.524943020831963e-45,
+      "sample_size": 5000
+    },
+    "outliers": {
+      "iqr": 73,
+      "z_score": 0,
+      "log_z_score": 0,
+      "isolation_forest": 213
+    },
+    "interpretation": "생성기가 만든 유한 분포. 정규성 기각만으로 데이터 오류라 판단하지 않음. IF 5%는 설정값이며 실제 사기율이 아님."
+  },
+  "documents": [
+    {
+      "file": "original.txt",
+      "bytes": 81,
+      "encoding": "utf-8",
+      "sha256": "2803dd5fe80a99335c1b39f2171bcf7ddea9178a0827212c98e812eb55ed3ec6",
+      "chars": 33,
+      "line_count": 1
+    },
+    {
+      "file": "duplicate.txt",
+      "bytes": 81,
+      "encoding": "utf-8",
+      "sha256": "2803dd5fe80a99335c1b39f2171bcf7ddea9178a0827212c98e812eb55ed3ec6",
+      "chars": 33,
+      "line_count": 1
+    },
+    {
+      "file": "cp949.txt",
+      "bytes": 57,
+      "encoding": "cp949",
+      "sha256": "4f5e6581052797094c5749e1ed967f45a04c94513e607bff66e33a28316ad088",
+      "chars": 33,
+      "line_count": 1
+    },
+    {
+      "file": "near.txt",
+      "bytes": 81,
+      "encoding": "utf-8",
+      "sha256": "3e1b402f5086e2a96586419cc532a051b695c6f418c966aedd4babb8178de15f",
+      "chars": 33,
+      "line_count": 1
+    },
+    {
+      "file": "different.txt",
+      "bytes": 59,
+      "encoding": "utf-8",
+      "sha256": "ed7168223bc17a70853c651c8ee50092cfe04943984a5f69e47a1e759e67c44a",
+      "chars": 23,
+      "line_count": 1
+    }
+  ],
+  "near_duplicates": [
+    {
+      "a": "original.txt",
+      "b": "duplicate.txt",
+      "jaccard": 1.0,
+      "byte_equal": true
+    },
+    {
+      "a": "original.txt",
+      "b": "cp949.txt",
+      "jaccard": 1.0,
+      "byte_equal": false
+    },
+    {
+      "a": "original.txt",
+      "b": "near.txt",
+      "jaccard": 0.6551724137931034,
+      "byte_equal": false
+    },
+    {
+      "a": "duplicate.txt",
+      "b": "cp949.txt",
+      "jaccard": 1.0,
+      "byte_equal": false
+    },
+    {
+      "a": "duplicate.txt",
+      "b": "near.txt",
+      "jaccard": 0.6551724137931034,
+      "byte_equal": false
+    },
+    {
+      "a": "cp949.txt",
+      "b": "near.txt",
+      "jaccard": 0.6551724137931034,
+      "byte_equal": false
+    }
+  ],
+  "images": [
+    {
+      "file": "RGB.png",
+      "mode": "RGB",
+      "width": 160,
+      "height": 160,
+      "bytes": 449
+    },
+    {
+      "file": "RGBA.png",
+      "mode": "RGBA",
+      "width": 80,
+      "height": 80,
+      "bytes": 252
+    },
+    {
+      "file": "L.png",
+      "mode": "L",
+      "width": 320,
+      "height": 240,
+      "bytes": 566
+    }
+  ],
+  "unicode": {
+    "nfc_nfd_same_bytes": false,
+    "normalized_equal": true
+  },
+  "entity_resolution": {
+    "tp": 24,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "observations": [
+      {
+        "seller_id": "S00",
+        "observed_name": "㈜ 상점 00"
+      },
+      {
+        "seller_id": "S00",
+        "observed_name": "상점00(주)"
+      },
+      {
+        "seller_id": "S00",
+        "observed_name": "주식회사 상점 00"
+      },
+      {
+        "seller_id": "S01",
+        "observed_name": "㈜ 상점 01"
+      },
+      {
+        "seller_id": "S01",
+        "observed_name": "상점01(주)"
+      },
+      {
+        "seller_id": "S01",
+        "observed_name": "주식회사 상점 01"
+      },
+      {
+        "seller_id": "S02",
+        "observed_name": "㈜ 상점 02"
+      },
+      {
+        "seller_id": "S02",
+        "observed_name": "상점02(주)"
+      },
+      {
+        "seller_id": "S02",
+        "observed_name": "주식회사 상점 02"
+      },
+      {
+        "seller_id": "S03",
+        "observed_name": "㈜ 상점 03"
+      },
+      {
+        "seller_id": "S03",
+        "observed_name": "상점03(주)"
+      },
+      {
+        "seller_id": "S03",
+        "observed_name": "주식회사 상점 03"
+      },
+      {
+        "seller_id": "S04",
+        "observed_name": "㈜ 상점 04"
+      },
+      {
+        "seller_id": "S04",
+        "observed_name": "상점04(주)"
+      },
+      {
+        "seller_id": "S04",
+        "observed_name": "주식회사 상점 04"
+      },
+      {
+        "seller_id": "S05",
+        "observed_name": "㈜ 상점 05"
+      },
+      {
+        "seller_id": "S05",
+        "observed_name": "상점05(주)"
+      },
+      {
+        "seller_id": "S05",
+        "observed_name": "주식회사 상점 05"
+      },
+      {
+        "seller_id": "S06",
+        "observed_name": "㈜ 상점 06"
+      },
+      {
+        "seller_id": "S06",
+        "observed_name": "상점06(주)"
+      },
+      {
+        "seller_id": "S06",
+        "observed_name": "주식회사 상점 06"
+      },
+      {
+        "seller_id": "S07",
+        "observed_name": "㈜ 상점 07"
+      },
+      {
+        "seller_id": "S07",
+        "observed_name": "상점07(주)"
+      },
+      {
+        "seller_id": "S07",
+        "observed_name": "주식회사 상점 07"
+      }
+    ],
+    "canonical_groups": 8,
+    "limitation": "고의로 쉬운 표기 변형 24건. 같은 상호의 다른 사업자·동명이인에는 이름만으로 자동 병합하지 않음."
+  },
+  "missingness_lab": {
+    "MCAR": {
+      "missing_rate": 0.098,
+      "old_group_rate": 0.0963855421686747,
+      "new_group_rate": 0.099601593625498,
+      "true_mean_missing": 34425.18312277765,
+      "true_mean_observed": 34109.031104512644
+    },
+    "MAR": {
+      "missing_rate": 0.12,
+      "old_group_rate": 0.24096385542168675,
+      "new_group_rate": 0.0,
+      "true_mean_missing": 31750.538520194885,
+      "true_mean_observed": 34465.85156804458
+    },
+    "MNAR": {
+      "missing_rate": 0.1,
+      "old_group_rate": 0.08835341365461848,
+      "new_group_rate": 0.11155378486055777,
+      "true_mean_missing": 131562.03924419032,
+      "true_mean_observed": 23315.344530981758
+    },
+    "interpretation": "합성 주입 규칙을 알고 있어 기제를 구분할 수 있음. 실제 관측 데이터의 결측률 차이만으로 MCAR/MAR/MNAR을 증명할 수 없음."
+  },
+  "quality_dimensions": {
+    "completeness": "필수값 누락은 validate에서 격리. 선택 메타데이터 결측은 허용",
+    "uniqueness": "이벤트 기본키 + payload hash; 반복 수신과 ID 충돌 구분",
+    "validity": [
+      {
+        "reason": "orphan_order",
+        "n": 1
+      },
+      {
+        "reason": "invalid_quantity",
+        "n": 30
+      }
+    ],
+    "accuracy": "생성기 정답 합계와 원장 비교: demo_evidence.json",
+    "consistency": "FK + 환불<=결제 + 마트/원장 합계 비교",
+    "timeliness": {
+      "over_24h_events": 570,
+      "total_payment_events": 7050,
+      "rate": 0.08085106382978724
+    }
+  },
+  "raw_distinct_payloads": [
+    {
+      "source": "shipments",
+      "n": 6000
+    },
+    {
+      "source": "payments",
+      "n": 7051
+    },
+    {
+      "source": "orders",
+      "n": 6030
+    }
+  ]
+}

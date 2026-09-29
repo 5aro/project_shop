@@ -1,0 +1,8 @@
+AGGREGATE[maintain_order: false]
+  [(col("quantity") * col("unit_price_krw")).sum()] BY [col("channel")]
+  FROM
+  simple π 3/3 ["channel", "quantity", ... 1 other column]
+    Parquet SCAN [/Users/5aro/Documents/Codex/2026-09-28/https-traveling-goat-521-notion-site/outputs/shopscope/data/bench/orders.parquet]
+    PROJECT 4/4 COLUMNS
+    SELECTION: col("status") == "paid"
+    ESTIMATED ROWS: 200000

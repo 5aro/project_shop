@@ -1,0 +1,466 @@
+{
+  "rows": 200000,
+  "repeats": 3,
+  "machine": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "python": "3.14.7",
+  "cpu_count": 10,
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "polars": "1.44.2",
+    "dask": "2026.8.0",
+    "pyarrow": "25.0.1"
+  },
+  "summary": [
+    {
+      "engine": "pandas_eager",
+      "median_seconds": 0.039318625000305474,
+      "peak_rss_mib": 144.984375
+    },
+    {
+      "engine": "pandas_chunks",
+      "median_seconds": 0.03971720801200718,
+      "peak_rss_mib": 121.109375
+    },
+    {
+      "engine": "polars_eager",
+      "median_seconds": 0.027008958044461906,
+      "peak_rss_mib": 113.25
+    },
+    {
+      "engine": "polars_lazy",
+      "median_seconds": 0.007251167087815702,
+      "peak_rss_mib": 102.078125
+    },
+    {
+      "engine": "polars_parquet",
+      "median_seconds": 0.004047124995850027,
+      "peak_rss_mib": 89.203125
+    },
+    {
+      "engine": "dask",
+      "median_seconds": 0.05455104191787541,
+      "peak_rss_mib": 188.3125
+    }
+  ],
+  "trials": [
+    {
+      "engine": "polars_lazy",
+      "elapsed_seconds": 0.025523249991238117,
+      "result": {
+        "app": 1999939000,
+        "market": 1999911000,
+        "web": 2000048000
+      },
+      "peak_rss_mib": 101.6875,
+      "process_wall_seconds": 0.12380675005260855,
+      "trial": 1
+    },
+    {
+      "engine": "pandas_chunks",
+      "elapsed_seconds": 0.04062554193660617,
+      "result": {
+        "app": 1999939000,
+        "market": 1999911000,
+        "web": 2000048000
+      },
+      "peak_rss_mib": 121.109375,
+      "process_wall_seconds": 0.3705840000184253,
+      "trial": 1
+    },
+    {
+      "engine": "polars_eager",
+      "elapsed_seconds": 0.0379602910252288,
+      "result": {
+        "app": 1999939000,
+        "web": 2000048000,
+        "market": 1999911000
+      },
+      "peak_rss_mib": 113.03125,
+      "process_wall_seconds": 0.1351682919776067,
+      "trial": 1
+    },
+    {
+      "engine": "polars_parquet",
+      "elapsed_seconds": 0.01076883403584361,
+      "result": {
+        "app": 1999939000,
+        "web": 2000048000,
+        "market": 1999911000
+      },
+      "peak_rss_mib": 88.859375,
+      "process_wall_seconds": 0.11064445902593434,
+      "trial": 1
+    },
+    {
+      "engine": "pandas_eager",
+      "elapsed_seconds": 0.0399109999416396,
+      "result": {
+        "app": 1999939000,
+        "market": 1999911000,
+        "web": 2000048000
+      },
+      "peak_rss_mib": 144.984375,
+      "process_wall_seconds": 0.2931759579805657,
+      "trial": 1
+    },
+    {
+      "engine": "dask",
+      "elapsed_seconds": 0.0653648329898715,
+      "result": {
+        "app": 1999939000,
+        "market": 1999911000,
+        "web": 2000048000
+      },
+      "peak_rss_mib": 177.09375,
+      "process_wall_seconds": 3.7527894999366254,
+      "trial": 1
+    },
+    {
+      "engine": "polars_lazy",
+      "elapsed_seconds": 0.007251167087815702,
+      "result": {
+        "app": 1999939000,
+        "market": 1999911000,
+        "web": 2000048000
+      },
+      "peak_rss_mib": 100.46875,
+      "process_wall_seconds": 0.10740245797205716,
+      "trial": 2
+    },
+    {
+      "engine": "pandas_eager",
+      "elapsed_seconds": 0.039318625000305474,
+      "result": {
+        "app": 1999939000,
+        "market": 1999911000,
+        "web": 2000048000
+      },
+      "peak_rss_mib": 144.9375,
+      "process_wall_seconds": 0.301939208060503,
+      "trial": 2
+    },
+    {
+      "engine": "polars_eager",
+      "elapsed_seconds": 0.027008958044461906,
+      "result": {
+        "market": 1999911000,
+        "web": 2000048000,
+        "app": 1999939000
+      },
+      "peak_rss_mib": 112.875,
+      "process_wall_seconds": 0.12828083289787173,
+      "trial": 2
+    },
+    {
+      "engine": "polars_parquet",
+      "elapsed_seconds": 0.004047124995850027,
+      "result": {
+        "app": 1999939000,
+        "market": 1999911000,
+        "web": 2000048000
+      },
+      "peak_rss_mib": 89.203125,
+      "process_wall_seconds": 0.0950870830565691,
+      "trial": 2
+    },
+    {
+      "engine": "dask",
+      "elapsed_seconds": 0.0499888340709731,
+      "result": {
+        "app": 1999939000,
+        "market": 1999911000,
+        "web": 2000048000
+      },
+      "peak_rss_mib": 188.3125,
+      "process_wall_seconds": 0.5700748329982162,
+      "trial": 2
+    },
+    {
+      "engine": "pandas_chunks",
+      "elapsed_seconds": 0.03542008297517896,
+      "result": {
+        "app": 1999939000,
+        "market": 1999911000,
+        "web": 2000048000
+      },
+      "peak_rss_mib": 120.890625,
+      "process_wall_seconds": 0.2837548330426216,
+      "trial": 2
+    },
+    {
+      "engine": "polars_lazy",
+      "elapsed_seconds": 0.006947541958652437,
+      "result": {
+        "app": 1999939000,
+        "market": 1999911000,
+        "web": 2000048000
+      },
+      "peak_rss_mib": 102.078125,
+      "process_wall_seconds": 0.09534558292943984,
+      "trial": 3
+    },
+    {
+      "engine": "pandas_chunks",
+      "elapsed_seconds": 0.03971720801200718,
+      "result": {
+        "app": 1999939000,
+        "market": 1999911000,
+        "web": 2000048000
+      },
+      "peak_rss_mib": 120.890625,
+      "process_wall_seconds": 0.30410991702228785,
+      "trial": 3
+    },
+    {
+      "engine": "polars_eager",
+      "elapsed_seconds": 0.026600042008794844,
+      "result": {
+        "market": 1999911000,
+        "app": 1999939000,
+        "web": 2000048000
+      },
+      "peak_rss_mib": 113.25,
+      "process_wall_seconds": 0.12284675007686019,
+      "trial": 3
+    },
+    {
+      "engine": "pandas_eager",
+      "elapsed_seconds": 0.037046250072307885,
+      "result": {
+        "app": 1999939000,
+        "market": 1999911000,
+        "web": 2000048000
+      },
+      "peak_rss_mib": 144.984375,
+      "process_wall_seconds": 0.28300479205790907,
+      "trial": 3
+    },
+    {
+      "engine": "polars_parquet",
+      "elapsed_seconds": 0.003768458031117916,
+      "result": {
+        "web": 2000048000,
+        "app": 1999939000,
+        "market": 1999911000
+      },
+      "peak_rss_mib": 88.375,
+      "process_wall_seconds": 0.09551566699519753,
+      "trial": 3
+    },
+    {
+      "engine": "dask",
+      "elapsed_seconds": 0.05455104191787541,
+      "result": {
+        "app": 1999939000,
+        "market": 1999911000,
+        "web": 2000048000
+      },
+      "peak_rss_mib": 187.8125,
+      "process_wall_seconds": 0.6495659590000287,
+      "trial": 3
+    }
+  ],
+  "all_results_equal": true,
+  "memory": {
+    "before_bytes": 24542990,
+    "after_bytes": 1000199
+  },
+  "numpy": {
+    "loop_seconds": 0.006669416092336178,
+    "vector_seconds": 0.00017145799938589334,
+    "equal": true,
+    "view_shares_memory": true,
+    "copy_shares_memory": false,
+    "broadcast_shape": [
+      3,
+      4
+    ]
+  },
+  "logs": {
+    "runs": [
+      {
+        "mode": "sequential",
+        "seconds": 0.005312625085934997,
+        "malformed": 0
+      },
+      {
+        "mode": "thread",
+        "seconds": 0.003961708047427237,
+        "malformed": 0
+      },
+      {
+        "mode": "process",
+        "seconds": 0.07172004191670567,
+        "malformed": 0
+      }
+    ],
+    "all_results_equal": true,
+    "latency_percentiles_ms": {
+      "50": 85.0,
+      "95": 419.10000000000036,
+      "99": 1496.0100000000002
+    },
+    "spikes": [
+      {
+        "hour": "2026-08-02T03",
+        "rate": 0.3
+      },
+      {
+        "hour": "2026-08-03T14",
+        "rate": 0.5
+      },
+      {
+        "hour": "2026-08-03T03",
+        "rate": 0.5
+      },
+      {
+        "hour": "2026-08-04T02",
+        "rate": 0.2857142857142857
+      },
+      {
+        "hour": "2026-08-04T14",
+        "rate": 0.4444444444444444
+      },
+      {
+        "hour": "2026-08-05T14",
+        "rate": 0.4444444444444444
+      },
+      {
+        "hour": "2026-08-06T17",
+        "rate": 0.3333333333333333
+      },
+      {
+        "hour": "2026-08-07T03",
+        "rate": 0.6
+      },
+      {
+        "hour": "2026-08-08T14",
+        "rate": 0.5
+      },
+      {
+        "hour": "2026-08-09T14",
+        "rate": 0.5454545454545454
+      },
+      {
+        "hour": "2026-08-10T03",
+        "rate": 0.4117647058823529
+      },
+      {
+        "hour": "2026-08-11T14",
+        "rate": 0.375
+      },
+      {
+        "hour": "2026-08-12T14",
+        "rate": 0.5
+      },
+      {
+        "hour": "2026-08-13T14",
+        "rate": 0.3076923076923077
+      },
+      {
+        "hour": "2026-08-13T03",
+        "rate": 0.42857142857142855
+      },
+      {
+        "hour": "2026-08-14T14",
+        "rate": 0.3333333333333333
+      },
+      {
+        "hour": "2026-08-15T03",
+        "rate": 0.4
+      },
+      {
+        "hour": "2026-08-17T03",
+        "rate": 0.625
+      },
+      {
+        "hour": "2026-08-17T14",
+        "rate": 0.5555555555555556
+      },
+      {
+        "hour": "2026-08-18T03",
+        "rate": 0.5384615384615384
+      },
+      {
+        "hour": "2026-08-18T14",
+        "rate": 0.5
+      },
+      {
+        "hour": "2026-08-19T03",
+        "rate": 0.3333333333333333
+      },
+      {
+        "hour": "2026-08-19T14",
+        "rate": 0.375
+      },
+      {
+        "hour": "2026-08-20T14",
+        "rate": 0.5
+      },
+      {
+        "hour": "2026-08-21T23",
+        "rate": 0.2857142857142857
+      },
+      {
+        "hour": "2026-08-21T03",
+        "rate": 0.4
+      },
+      {
+        "hour": "2026-08-24T14",
+        "rate": 0.4
+      },
+      {
+        "hour": "2026-08-25T03",
+        "rate": 0.4
+      },
+      {
+        "hour": "2026-08-25T14",
+        "rate": 0.375
+      },
+      {
+        "hour": "2026-08-27T14",
+        "rate": 0.6
+      },
+      {
+        "hour": "2026-08-27T03",
+        "rate": 0.3333333333333333
+      },
+      {
+        "hour": "2026-08-28T03",
+        "rate": 0.375
+      },
+      {
+        "hour": "2026-08-30T03",
+        "rate": 0.5
+      },
+      {
+        "hour": "2026-08-30T14",
+        "rate": 0.5
+      },
+      {
+        "hour": "2026-08-01T14",
+        "rate": 0.2727272727272727
+      },
+      {
+        "hour": "2026-08-06T03",
+        "rate": 0.42857142857142855
+      },
+      {
+        "hour": "2026-08-22T14",
+        "rate": 0.5
+      },
+      {
+        "hour": "2026-08-23T14",
+        "rate": 0.5
+      }
+    ]
+  },
+  "limitations": [
+    "로컬 합성 데이터; OS 파일 캐시를 비우지 않은 반복 실행",
+    "RSS는 resource.getrusage의 단일 프로세스 high-water mark이며 import 메모리 포함",
+    "각 엔진 별도 프로세스; elapsed는 import 제외, process_wall은 import 포함",
+    "Dask는 단일 Mac의 스레드 스케줄러이며 다중 노드 실험이 아님",
+    "로그 실험은 한 번 실행한 비교이며 속도 향상을 보장하지 않음"
+  ]
+}

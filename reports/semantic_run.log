@@ -1,0 +1,242 @@
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 9764.01it/s]
+{
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "dimensions": 384,
+  "device": "cpu",
+  "products": 80,
+  "elapsed_seconds": 1.2035499169724062,
+  "examples": [
+    {
+      "query": "따뜻한 커피를 담아서 출근할 때 가져가고 싶어요",
+      "expected_category": "생활",
+      "hits": [
+        {
+          "product_id": "P0001",
+          "title": "무선 헤드폰 01",
+          "category": "전자",
+          "similarity": 0.3082253245048141
+        },
+        {
+          "product_id": "P0005",
+          "title": "무선 헤드폰 05",
+          "category": "전자",
+          "similarity": 0.2632240496144269
+        },
+        {
+          "product_id": "P0009",
+          "title": "무선 헤드폰 09",
+          "category": "전자",
+          "similarity": 0.24167536248711619
+        },
+        {
+          "product_id": "P0061",
+          "title": "무선 헤드폰 61",
+          "category": "전자",
+          "similarity": 0.2361055182092764
+        },
+        {
+          "product_id": "P0002",
+          "title": "데일리 백팩 02",
+          "category": "패션",
+          "similarity": 0.2358653106769738
+        }
+      ],
+      "filtered_hits": [
+        {
+          "product_id": "P0000",
+          "title": "보온 텀블러 00",
+          "category": "생활",
+          "similarity": 0.20346256206818336
+        },
+        {
+          "product_id": "P0076",
+          "title": "보온 텀블러 76",
+          "category": "생활",
+          "similarity": 0.19217329644640468
+        },
+        {
+          "product_id": "P0008",
+          "title": "보온 텀블러 08",
+          "category": "생활",
+          "similarity": 0.19089706946646334
+        }
+      ],
+      "top1_category_match": false
+    },
+    {
+      "query": "주변 소음을 줄이고 음악을 듣고 싶어요",
+      "expected_category": "전자",
+      "hits": [
+        {
+          "product_id": "P0001",
+          "title": "무선 헤드폰 01",
+          "category": "전자",
+          "similarity": 0.4517298802217895
+        },
+        {
+          "product_id": "P0005",
+          "title": "무선 헤드폰 05",
+          "category": "전자",
+          "similarity": 0.4095316583197328
+        },
+        {
+          "product_id": "P0013",
+          "title": "무선 헤드폰 13",
+          "category": "전자",
+          "similarity": 0.3939529892178235
+        },
+        {
+          "product_id": "P0053",
+          "title": "무선 헤드폰 53",
+          "category": "전자",
+          "similarity": 0.3928503756016276
+        },
+        {
+          "product_id": "P0021",
+          "title": "무선 헤드폰 21",
+          "category": "전자",
+          "similarity": 0.3925065526358422
+        }
+      ],
+      "filtered_hits": [
+        {
+          "product_id": "P0001",
+          "title": "무선 헤드폰 01",
+          "category": "전자",
+          "similarity": 0.4517298802217895
+        },
+        {
+          "product_id": "P0005",
+          "title": "무선 헤드폰 05",
+          "category": "전자",
+          "similarity": 0.4095316583197328
+        },
+        {
+          "product_id": "P0013",
+          "title": "무선 헤드폰 13",
+          "category": "전자",
+          "similarity": 0.3939529892178235
+        }
+      ],
+      "top1_category_match": true
+    },
+    {
+      "query": "노트북을 넣고 출근할 가방",
+      "expected_category": "패션",
+      "hits": [
+        {
+          "product_id": "P0002",
+          "title": "데일리 백팩 02",
+          "category": "패션",
+          "similarity": 0.5555828213691711
+        },
+        {
+          "product_id": "P0050",
+          "title": "데일리 백팩 50",
+          "category": "패션",
+          "similarity": 0.5501676469941359
+        },
+        {
+          "product_id": "P0006",
+          "title": "데일리 백팩 06",
+          "category": "패션",
+          "similarity": 0.5466071530165423
+        },
+        {
+          "product_id": "P0046",
+          "title": "데일리 백팩 46",
+          "category": "패션",
+          "similarity": 0.5463757189288316
+        },
+        {
+          "product_id": "P0066",
+          "title": "데일리 백팩 66",
+          "category": "패션",
+          "similarity": 0.5351622700691223
+        }
+      ],
+      "filtered_hits": [
+        {
+          "product_id": "P0002",
+          "title": "데일리 백팩 02",
+          "category": "패션",
+          "similarity": 0.5555828213691711
+        },
+        {
+          "product_id": "P0050",
+          "title": "데일리 백팩 50",
+          "category": "패션",
+          "similarity": 0.5501676469941359
+        },
+        {
+          "product_id": "P0006",
+          "title": "데일리 백팩 06",
+          "category": "패션",
+          "similarity": 0.5466071530165423
+        }
+      ],
+      "top1_category_match": true
+    },
+    {
+      "query": "달리기할 때 발이 편한 신발",
+      "expected_category": "스포츠",
+      "hits": [
+        {
+          "product_id": "P0015",
+          "title": "러닝 운동화 15",
+          "category": "스포츠",
+          "similarity": 0.8289859789005506
+        },
+        {
+          "product_id": "P0003",
+          "title": "러닝 운동화 03",
+          "category": "스포츠",
+          "similarity": 0.8289854279462898
+        },
+        {
+          "product_id": "P0047",
+          "title": "러닝 운동화 47",
+          "category": "스포츠",
+          "similarity": 0.8289332040826445
+        },
+        {
+          "product_id": "P0023",
+          "title": "러닝 운동화 23",
+          "category": "스포츠",
+          "similarity": 0.8284818180943081
+        },
+        {
+          "product_id": "P0051",
+          "title": "러닝 운동화 51",
+          "category": "스포츠",
+          "similarity": 0.8265004793555292
+        }
+      ],
+      "filtered_hits": [
+        {
+          "product_id": "P0015",
+          "title": "러닝 운동화 15",
+          "category": "스포츠",
+          "similarity": 0.8289859789005506
+        },
+        {
+          "product_id": "P0003",
+          "title": "러닝 운동화 03",
+          "category": "스포츠",
+          "similarity": 0.8289854279462898
+        },
+        {
+          "product_id": "P0047",
+          "title": "러닝 운동화 47",
+          "category": "스포츠",
+          "similarity": 0.8289332040826445
+        }
+      ],
+      "top1_category_match": true
+    }
+  ],
+  "top1_category_matches": 3,
+  "queries": 4,
+  "limitation": "직접 작성한 4개 질의에 대한 시연. 별도 평가셋 일반화 성능이나 추천 시스템 품질의 증거가 아님."
+}

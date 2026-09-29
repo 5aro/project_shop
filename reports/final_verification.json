@@ -1,0 +1,17 @@
+{
+  "actual": {
+    "orders": 6000,
+    "captured_krw": "203049000",
+    "refunded_krw": "7937000",
+    "net_collected_krw": "195112000"
+  },
+  "checks": {
+    "orders": true,
+    "captured_krw": true,
+    "refunded_krw": true,
+    "net_collected_krw": true,
+    "mart_matches_ledger": true,
+    "no_negative_net": true
+  },
+  "passed": true
+}

@@ -1,0 +1,343 @@
+{
+  "embedding_model": "char-ngram-sha256-v1-128",
+  "neural_semantic_embedding": false,
+  "limitations": "문자 n-gram 해시 기준선. 같은 표현의 부분 일치에는 유용하지만 동의어 의미를 학습한 모델이 아님.",
+  "query": "휴대용 보온 물병",
+  "category": "생활",
+  "hits": [
+    {
+      "product_id": "P0016",
+      "title": "보온 텀블러 16",
+      "category": "생활",
+      "similarity": 0.41291819772368243
+    },
+    {
+      "product_id": "P0076",
+      "title": "보온 텀블러 76",
+      "category": "생활",
+      "similarity": 0.38862891827139656
+    },
+    {
+      "product_id": "P0064",
+      "title": "보온 텀블러 64",
+      "category": "생활",
+      "similarity": 0.36702575487051936
+    },
+    {
+      "product_id": "P0044",
+      "title": "보온 텀블러 44",
+      "category": "생활",
+      "similarity": 0.35968451620088615
+    },
+    {
+      "product_id": "P0024",
+      "title": "보온 텀블러 24",
+      "category": "생활",
+      "similarity": 0.35617533530372414
+    }
+  ],
+  "triple_search": [
+    {
+      "product_id": "P0024",
+      "title": "보온 텀블러 24",
+      "text_rank": 0.06079271,
+      "similarity": 0.35617533530372414
+    },
+    {
+      "product_id": "P0036",
+      "title": "보온 텀블러 36",
+      "text_rank": 0.06079271,
+      "similarity": 0.3462335570524204
+    },
+    {
+      "product_id": "P0072",
+      "title": "보온 텀블러 72",
+      "text_rank": 0.06079271,
+      "similarity": 0.34310019103588396
+    },
+    {
+      "product_id": "P0012",
+      "title": "보온 텀블러 12",
+      "text_rank": 0.06079271,
+      "similarity": 0.3373495738908523
+    },
+    {
+      "product_id": "P0048",
+      "title": "보온 텀블러 48",
+      "text_rank": 0.06079271,
+      "similarity": 0.3373495738908523
+    }
+  ],
+  "indexes": [
+    {
+      "indexname": "products_pkey",
+      "indexdef": "CREATE UNIQUE INDEX products_pkey ON shop.products USING btree (product_id)"
+    },
+    {
+      "indexname": "products_category_idx",
+      "indexdef": "CREATE INDEX products_category_idx ON shop.products USING btree (category)"
+    },
+    {
+      "indexname": "products_meta_idx",
+      "indexdef": "CREATE INDEX products_meta_idx ON shop.products USING gin (metadata jsonb_path_ops)"
+    },
+    {
+      "indexname": "products_search_idx",
+      "indexdef": "CREATE INDEX products_search_idx ON shop.products USING gin (search_text)"
+    },
+    {
+      "indexname": "products_vector_idx",
+      "indexdef": "CREATE INDEX products_vector_idx ON shop.products USING hnsw (embedding vector_cosine_ops)"
+    }
+  ],
+  "distances": {
+    "cosine_distance": 0.6000000238418579,
+    "l2_distance": 1.0954450368881226,
+    "inner_product": 0.3999999761581421
+  },
+  "ann": {
+    "rows": 5000,
+    "dimensions": 32,
+    "queries": 20,
+    "k": 5,
+    "seed": 42,
+    "exact_median_ms": 0.5233329720795155,
+    "results": [
+      {
+        "method": "hnsw",
+        "setting": 10,
+        "recall_at_5": 0.8,
+        "median_ms": 0.3567289677448571,
+        "build_seconds": 0.45849383308086544,
+        "natural_plan": {
+          "QUERY PLAN": [
+            {
+              "Plan": {
+                "Node Type": "Limit",
+                "Parallel Aware": false,
+                "Async Capable": false,
+                "Startup Cost": 112.59,
+                "Total Cost": 114.07,
+                "Plan Rows": 5,
+                "Plan Width": 12,
+                "Plans": [
+                  {
+                    "Node Type": "Index Scan",
+                    "Parent Relationship": "Outer",
+                    "Parallel Aware": false,
+                    "Async Capable": false,
+                    "Scan Direction": "Forward",
+                    "Index Name": "ann_idx",
+                    "Relation Name": "ann_lab",
+                    "Alias": "ann_lab",
+                    "Startup Cost": 112.59,
+                    "Total Cost": 1596.0,
+                    "Plan Rows": 5000,
+                    "Plan Width": 12,
+                    "Order By": "(embedding <=> '[-0.3730498,-0.0068763182,0.08189205,-0.20762756,0.10239217,-0.019394554,-0.2032421,0.023201074,-0.18971086,0.023514023,0.10529203,0.3631616,0.058939364,-0.13964495,-0.29108402,0.07391228,-0.08673603,-0.41075218,-0.0944038,-0.17784363,0.2821466,-0.15571442,-0.049001552,-0.015366084,0.020211121,0.1503494,0.045583762,-0.082701236,-0.10011239,-0.11228914,0.29597357,-0.012140021]'::vector)"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "method": "hnsw",
+        "setting": 40,
+        "recall_at_5": 0.97,
+        "median_ms": 0.37072901614010334,
+        "build_seconds": 0.45849383308086544,
+        "natural_plan": {
+          "QUERY PLAN": [
+            {
+              "Plan": {
+                "Node Type": "Limit",
+                "Parallel Aware": false,
+                "Async Capable": false,
+                "Startup Cost": 112.59,
+                "Total Cost": 114.07,
+                "Plan Rows": 5,
+                "Plan Width": 12,
+                "Plans": [
+                  {
+                    "Node Type": "Index Scan",
+                    "Parent Relationship": "Outer",
+                    "Parallel Aware": false,
+                    "Async Capable": false,
+                    "Scan Direction": "Forward",
+                    "Index Name": "ann_idx",
+                    "Relation Name": "ann_lab",
+                    "Alias": "ann_lab",
+                    "Startup Cost": 112.59,
+                    "Total Cost": 1596.0,
+                    "Plan Rows": 5000,
+                    "Plan Width": 12,
+                    "Order By": "(embedding <=> '[-0.3730498,-0.0068763182,0.08189205,-0.20762756,0.10239217,-0.019394554,-0.2032421,0.023201074,-0.18971086,0.023514023,0.10529203,0.3631616,0.058939364,-0.13964495,-0.29108402,0.07391228,-0.08673603,-0.41075218,-0.0944038,-0.17784363,0.2821466,-0.15571442,-0.049001552,-0.015366084,0.020211121,0.1503494,0.045583762,-0.082701236,-0.10011239,-0.11228914,0.29597357,-0.012140021]'::vector)"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "method": "hnsw",
+        "setting": 100,
+        "recall_at_5": 1.0,
+        "median_ms": 0.48737449105829,
+        "build_seconds": 0.45849383308086544,
+        "natural_plan": {
+          "QUERY PLAN": [
+            {
+              "Plan": {
+                "Node Type": "Limit",
+                "Parallel Aware": false,
+                "Async Capable": false,
+                "Startup Cost": 112.59,
+                "Total Cost": 114.07,
+                "Plan Rows": 5,
+                "Plan Width": 12,
+                "Plans": [
+                  {
+                    "Node Type": "Index Scan",
+                    "Parent Relationship": "Outer",
+                    "Parallel Aware": false,
+                    "Async Capable": false,
+                    "Scan Direction": "Forward",
+                    "Index Name": "ann_idx",
+                    "Relation Name": "ann_lab",
+                    "Alias": "ann_lab",
+                    "Startup Cost": 112.59,
+                    "Total Cost": 1596.0,
+                    "Plan Rows": 5000,
+                    "Plan Width": 12,
+                    "Order By": "(embedding <=> '[-0.3730498,-0.0068763182,0.08189205,-0.20762756,0.10239217,-0.019394554,-0.2032421,0.023201074,-0.18971086,0.023514023,0.10529203,0.3631616,0.058939364,-0.13964495,-0.29108402,0.07391228,-0.08673603,-0.41075218,-0.0944038,-0.17784363,0.2821466,-0.15571442,-0.049001552,-0.015366084,0.020211121,0.1503494,0.045583762,-0.082701236,-0.10011239,-0.11228914,0.29597357,-0.012140021]'::vector)"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "method": "ivfflat",
+        "setting": 1,
+        "recall_at_5": 0.16000000000000003,
+        "median_ms": 0.2772290608845651,
+        "build_seconds": 0.045596416923217475,
+        "natural_plan": {
+          "QUERY PLAN": [
+            {
+              "Plan": {
+                "Node Type": "Limit",
+                "Parallel Aware": false,
+                "Async Capable": false,
+                "Startup Cost": 6.3,
+                "Total Cost": 7.1,
+                "Plan Rows": 5,
+                "Plan Width": 12,
+                "Plans": [
+                  {
+                    "Node Type": "Index Scan",
+                    "Parent Relationship": "Outer",
+                    "Parallel Aware": false,
+                    "Async Capable": false,
+                    "Scan Direction": "Forward",
+                    "Index Name": "ann_idx",
+                    "Relation Name": "ann_lab",
+                    "Alias": "ann_lab",
+                    "Startup Cost": 6.3,
+                    "Total Cost": 805.5,
+                    "Plan Rows": 5000,
+                    "Plan Width": 12,
+                    "Order By": "(embedding <=> '[-0.3730498,-0.0068763182,0.08189205,-0.20762756,0.10239217,-0.019394554,-0.2032421,0.023201074,-0.18971086,0.023514023,0.10529203,0.3631616,0.058939364,-0.13964495,-0.29108402,0.07391228,-0.08673603,-0.41075218,-0.0944038,-0.17784363,0.2821466,-0.15571442,-0.049001552,-0.015366084,0.020211121,0.1503494,0.045583762,-0.082701236,-0.10011239,-0.11228914,0.29597357,-0.012140021]'::vector)"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "method": "ivfflat",
+        "setting": 5,
+        "recall_at_5": 0.5599999999999999,
+        "median_ms": 0.295125471893698,
+        "build_seconds": 0.045596416923217475,
+        "natural_plan": {
+          "QUERY PLAN": [
+            {
+              "Plan": {
+                "Node Type": "Limit",
+                "Parallel Aware": false,
+                "Async Capable": false,
+                "Startup Cost": 6.3,
+                "Total Cost": 7.1,
+                "Plan Rows": 5,
+                "Plan Width": 12,
+                "Plans": [
+                  {
+                    "Node Type": "Index Scan",
+                    "Parent Relationship": "Outer",
+                    "Parallel Aware": false,
+                    "Async Capable": false,
+                    "Scan Direction": "Forward",
+                    "Index Name": "ann_idx",
+                    "Relation Name": "ann_lab",
+                    "Alias": "ann_lab",
+                    "Startup Cost": 6.3,
+                    "Total Cost": 805.5,
+                    "Plan Rows": 5000,
+                    "Plan Width": 12,
+                    "Order By": "(embedding <=> '[-0.3730498,-0.0068763182,0.08189205,-0.20762756,0.10239217,-0.019394554,-0.2032421,0.023201074,-0.18971086,0.023514023,0.10529203,0.3631616,0.058939364,-0.13964495,-0.29108402,0.07391228,-0.08673603,-0.41075218,-0.0944038,-0.17784363,0.2821466,-0.15571442,-0.049001552,-0.015366084,0.020211121,0.1503494,0.045583762,-0.082701236,-0.10011239,-0.11228914,0.29597357,-0.012140021]'::vector)"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "method": "ivfflat",
+        "setting": 10,
+        "recall_at_5": 0.8099999999999999,
+        "median_ms": 0.3397915279492736,
+        "build_seconds": 0.045596416923217475,
+        "natural_plan": {
+          "QUERY PLAN": [
+            {
+              "Plan": {
+                "Node Type": "Limit",
+                "Parallel Aware": false,
+                "Async Capable": false,
+                "Startup Cost": 6.3,
+                "Total Cost": 7.1,
+                "Plan Rows": 5,
+                "Plan Width": 12,
+                "Plans": [
+                  {
+                    "Node Type": "Index Scan",
+                    "Parent Relationship": "Outer",
+                    "Parallel Aware": false,
+                    "Async Capable": false,
+                    "Scan Direction": "Forward",
+                    "Index Name": "ann_idx",
+                    "Relation Name": "ann_lab",
+                    "Alias": "ann_lab",
+                    "Startup Cost": 6.3,
+                    "Total Cost": 805.5,
+                    "Plan Rows": 5000,
+                    "Plan Width": 12,
+                    "Order By": "(embedding <=> '[-0.3730498,-0.0068763182,0.08189205,-0.20762756,0.10239217,-0.019394554,-0.2032421,0.023201074,-0.18971086,0.023514023,0.10529203,0.3631616,0.058939364,-0.13964495,-0.29108402,0.07391228,-0.08673603,-0.41075218,-0.0944038,-0.17784363,0.2821466,-0.15571442,-0.049001552,-0.015366084,0.020211121,0.1503494,0.045583762,-0.082701236,-0.10011239,-0.11228914,0.29597357,-0.012140021]'::vector)"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "scope": "무작위 벡터의 ANN 회수율. 상품 검색 관련성 평가와 다름. ANN 비교 시 seqscan만 실험적으로 끔."
+  }
+}

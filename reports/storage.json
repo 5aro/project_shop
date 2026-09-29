@@ -1,0 +1,69 @@
+{
+  "postgres_category_count": 20,
+  "mongo_category_count": 0,
+  "same_results": null,
+  "mongo": {
+    "status": "blocked",
+    "error": "ServerSelectionTimeoutError: 127.0.0.1:57017: [Errno 61] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 3.0s, Topology Descripti",
+    "documents": null,
+    "execution_stats": null
+  },
+  "redis": {
+    "first_miss": true,
+    "second_hit": true,
+    "ttl_seconds": 60,
+    "ttl_expired": true,
+    "invalidated": true
+  },
+  "neo4j": {
+    "products": 80,
+    "two_hop_results": [
+      {
+        "seller": "S00",
+        "product": "P0008",
+        "title": "보온 텀블러 08"
+      },
+      {
+        "seller": "S00",
+        "product": "P0016",
+        "title": "보온 텀블러 16"
+      },
+      {
+        "seller": "S00",
+        "product": "P0024",
+        "title": "보온 텀블러 24"
+      },
+      {
+        "seller": "S00",
+        "product": "P0032",
+        "title": "보온 텀블러 32"
+      },
+      {
+        "seller": "S00",
+        "product": "P0040",
+        "title": "보온 텀블러 40"
+      },
+      {
+        "seller": "S00",
+        "product": "P0048",
+        "title": "보온 텀블러 48"
+      },
+      {
+        "seller": "S00",
+        "product": "P0056",
+        "title": "보온 텀블러 56"
+      },
+      {
+        "seller": "S00",
+        "product": "P0064",
+        "title": "보온 텀블러 64"
+      },
+      {
+        "seller": "S00",
+        "product": "P0072",
+        "title": "보온 텀블러 72"
+      }
+    ]
+  },
+  "decision": "거래 정합성의 기준은 PostgreSQL. MongoDB는 내장 문서 모델 비교, Redis는 재생성 가능한 캐시, Neo4j는 관계 탐색 실험. DB 간 분산 트랜잭션은 구현하지 않음."
+}

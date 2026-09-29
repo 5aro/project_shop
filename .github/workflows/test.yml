@@ -1,0 +1,41 @@
+# GitHub Actions는 push/PR마다 별도 Linux 환경에서 테스트를 재현합니다.
+name: tests
+
+# 저장소 push 또는 PR 이벤트가 발생하면 workflow를 시작합니다.
+# 여기서는 실제 배포 대신 테스트만 자동 실행합니다.
+on: [push, pull_request]
+jobs:
+  core:
+
+    # GitHub가 제공하는 임시 Linux 실행 환경입니다.
+    # 로컬 Mac과 환경 차이가 있으므로 같은 테스트가 다른 OS에서도 통과하는지 확인합니다.
+    runs-on: ubuntu-latest
+# DB 서비스 컨테이너를 준비합니다. 테스트 fixture가 이 서버에 고유한 임시 DB를 생성하고 종료 시 삭제합니다.
+    services:
+      postgres:
+        image: pgvector/pgvector:pg17
+        env:
+          POSTGRES_USER: shopscope
+          POSTGRES_PASSWORD: shopscope_local
+          POSTGRES_DB: shopscope
+
+        # 작업 호스트의 55432를 DB 서비스의 5432로 연결합니다.
+        # shopscope.config의 기본 로컬 DSN과 같은 호스트 포트를 사용합니다.
+        ports: ['55432:5432']
+
+        # YAML의 >-는 여러 줄을 공백으로 이어 하나의 문자열로 전달합니다.
+        # Docker healthcheck 옵션을 읽기 좋게 여러 줄에 나누어 적은 것입니다.
+        options: >-
+          --health-cmd "pg_isready -U shopscope -d shopscope"
+          --health-interval 5s --health-timeout 5s --health-retries 20
+# 소스 체크아웃 → Python 준비 → 개발 의존성 설치 → 테스트 순서입니다. 로컬 .venv를 사용하는 것이 아닙니다.
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # 개발 의존성을 포함해 설치한 뒤 pytest를 실행합니다.
+      # 여기서는 선택 실험 패키지 전체나 모델을 다운로드하지 않고 핵심 테스트 범위를 실행합니다.
+      - run: pip install -e '.[dev]'
+      - run: python -m pytest -q

@@ -1,0 +1,739 @@
+{
+  "first_pass": [
+    {
+      "run_id": "26b02520b99c4a03b99ea467ef9e76bd",
+      "business_date": "2026-08-01",
+      "rows_seen": 425,
+      "inserted": 416,
+      "duplicate": 7,
+      "quarantined": 2,
+      "recovered": 0,
+      "elapsed_seconds": 0.4382
+    },
+    {
+      "run_id": "121ab1ebd3c3457dac9fcb7feb017f65",
+      "business_date": "2026-08-02",
+      "rows_seen": 424,
+      "inserted": 416,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.4242
+    },
+    {
+      "run_id": "d63e8a85c90042688ec87a94270b8604",
+      "business_date": "2026-08-03",
+      "rows_seen": 584,
+      "inserted": 576,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.5483
+    },
+    {
+      "run_id": "ca79209d94074a7ea0e2364df5dce884",
+      "business_date": "2026-08-04",
+      "rows_seen": 584,
+      "inserted": 576,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.5583
+    },
+    {
+      "run_id": "16ec0a50af9144a1a1e8077f05a0cd11",
+      "business_date": "2026-08-05",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6126
+    },
+    {
+      "run_id": "1898731a493c4ed0a1e93adcd0ae4d66",
+      "business_date": "2026-08-06",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6153
+    },
+    {
+      "run_id": "5a1927e107b1484ba001a475dfe5263a",
+      "business_date": "2026-08-07",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6148
+    },
+    {
+      "run_id": "9c6b2842274348d7985f4ceafa4ad378",
+      "business_date": "2026-08-08",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6059
+    },
+    {
+      "run_id": "5f92bec3d6ea48b1a669c9764bd5279d",
+      "business_date": "2026-08-09",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.616
+    },
+    {
+      "run_id": "d71207ffc34f4a9687d52f42edc024d4",
+      "business_date": "2026-08-10",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6158
+    },
+    {
+      "run_id": "2b22293edadc4d6ca575a15e4eebf27e",
+      "business_date": "2026-08-11",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6104
+    },
+    {
+      "run_id": "7e9ebe447a3d4a7ba076ee1fba18101c",
+      "business_date": "2026-08-12",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6139
+    },
+    {
+      "run_id": "0bb61a13493e4b80b79ae41c89bc857f",
+      "business_date": "2026-08-13",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6125
+    },
+    {
+      "run_id": "acf15d56cf674fab8a716accc6718545",
+      "business_date": "2026-08-14",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.611
+    },
+    {
+      "run_id": "8f59b98581ca49cc831a508d8ca34368",
+      "business_date": "2026-08-15",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6301
+    },
+    {
+      "run_id": "7518aebbce7149b9a7507a24f9299509",
+      "business_date": "2026-08-16",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6173
+    },
+    {
+      "run_id": "795093dfaaef4f45ace44826dadc0186",
+      "business_date": "2026-08-17",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6105
+    },
+    {
+      "run_id": "1805a7d0b51c4e1b98dda2b3aff3a2af",
+      "business_date": "2026-08-18",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6165
+    },
+    {
+      "run_id": "53d552d2ea994417946b0fc9cb2c8578",
+      "business_date": "2026-08-19",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6147
+    },
+    {
+      "run_id": "7a8647a25ea64f69aafddacad8d25ce7",
+      "business_date": "2026-08-20",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6187
+    },
+    {
+      "run_id": "2b20ff714ca14ae89c3869c60b41c2d3",
+      "business_date": "2026-08-21",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6403
+    },
+    {
+      "run_id": "c975739e07f948ebaa78c040467dbff5",
+      "business_date": "2026-08-22",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.621
+    },
+    {
+      "run_id": "f49b89301fe4469a8dfac213a33e029a",
+      "business_date": "2026-08-23",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6228
+    },
+    {
+      "run_id": "230d666175bd423f9fb0c33082fe9108",
+      "business_date": "2026-08-24",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6122
+    },
+    {
+      "run_id": "a15350b05a1946f4a716719bf79a5f3e",
+      "business_date": "2026-08-25",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6197
+    },
+    {
+      "run_id": "1f9dce6061f642c6b2a6f66eb1c85713",
+      "business_date": "2026-08-26",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.626
+    },
+    {
+      "run_id": "5b6c5343d43748be941b06eb6b72f1b6",
+      "business_date": "2026-08-27",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6173
+    },
+    {
+      "run_id": "8257b97343334947a55856e9387731eb",
+      "business_date": "2026-08-28",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6233
+    },
+    {
+      "run_id": "dbe44acd15f34c688c6f2829b18770fb",
+      "business_date": "2026-08-29",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6226
+    },
+    {
+      "run_id": "4c4fafc7a44c405bae7a0b5f5c93d298",
+      "business_date": "2026-08-30",
+      "rows_seen": 643,
+      "inserted": 635,
+      "duplicate": 7,
+      "quarantined": 1,
+      "recovered": 0,
+      "elapsed_seconds": 0.6136
+    },
+    {
+      "run_id": "5d3c6d42b6cf4f23a041749dd45b52dd",
+      "business_date": "2026-08-31",
+      "rows_seen": 219,
+      "inserted": 219,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "elapsed_seconds": 0.2299
+    },
+    {
+      "run_id": "d8f08ef61cec494f9a34573722f15d9f",
+      "business_date": "2026-09-01",
+      "rows_seen": 219,
+      "inserted": 219,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "elapsed_seconds": 0.2256
+    },
+    {
+      "run_id": "e09dbed5778c4987b6b4701adf3eba69",
+      "business_date": "2026-09-02",
+      "rows_seen": 59,
+      "inserted": 59,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "elapsed_seconds": 0.0915
+    },
+    {
+      "run_id": "86082c86d3294e3a84161314722b9bb3",
+      "business_date": "2026-09-03",
+      "rows_seen": 59,
+      "inserted": 59,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "elapsed_seconds": 0.1006
+    }
+  ],
+  "repeat_pass": [
+    {
+      "run_id": "2a3c9be7b13942d6b216bf780a55bb44",
+      "business_date": "2026-08-01",
+      "rows_seen": 425,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0119
+    },
+    {
+      "run_id": "8723e78d87634bb1807ad121c57d2e03",
+      "business_date": "2026-08-02",
+      "rows_seen": 424,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0116
+    },
+    {
+      "run_id": "93c0115545cf4055be80da9a8bb16060",
+      "business_date": "2026-08-03",
+      "rows_seen": 584,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0088
+    },
+    {
+      "run_id": "391c3ca82c244f0885e9c5d4465a4f96",
+      "business_date": "2026-08-04",
+      "rows_seen": 584,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0082
+    },
+    {
+      "run_id": "3e00ca14bd8b49d6a6794d0a0e4e3e09",
+      "business_date": "2026-08-05",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0078
+    },
+    {
+      "run_id": "7335baa69534498b87c49e8fa4a35506",
+      "business_date": "2026-08-06",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0084
+    },
+    {
+      "run_id": "d28a6b541e88470bb0639dccfe8220a4",
+      "business_date": "2026-08-07",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0082
+    },
+    {
+      "run_id": "78e9c08038034c6da6bffd01e9486286",
+      "business_date": "2026-08-08",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0081
+    },
+    {
+      "run_id": "e1abc27ce8614aaeaec35bf105e7a451",
+      "business_date": "2026-08-09",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0085
+    },
+    {
+      "run_id": "7709b559a5c34884a1a67ad0b540eb85",
+      "business_date": "2026-08-10",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0082
+    },
+    {
+      "run_id": "5c9a60390f044b6aa2f603c1c6c38cc0",
+      "business_date": "2026-08-11",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0083
+    },
+    {
+      "run_id": "3022385ee0264359aff14232e69ca078",
+      "business_date": "2026-08-12",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0083
+    },
+    {
+      "run_id": "77904e26e5944dbc816090cdf7b6ddca",
+      "business_date": "2026-08-13",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0081
+    },
+    {
+      "run_id": "a039383370fb42d19720c281405b07ef",
+      "business_date": "2026-08-14",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0083
+    },
+    {
+      "run_id": "8ad2d8ddecce42039f8cdeb5b396b533",
+      "business_date": "2026-08-15",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0087
+    },
+    {
+      "run_id": "edf8d732ed7d4d40a8b3cadadabd3430",
+      "business_date": "2026-08-16",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0085
+    },
+    {
+      "run_id": "3de2e2359fe542bf97e1a34f01dc8ded",
+      "business_date": "2026-08-17",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0081
+    },
+    {
+      "run_id": "6b7ab08b234e418ba60f751916dcce03",
+      "business_date": "2026-08-18",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.008
+    },
+    {
+      "run_id": "f0e22938b6e040b5a182eaf7877b1273",
+      "business_date": "2026-08-19",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0088
+    },
+    {
+      "run_id": "7d812355227e4999a6f5835105610aeb",
+      "business_date": "2026-08-20",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0086
+    },
+    {
+      "run_id": "a77c7a1397a447bf9724a52d6ae2a88a",
+      "business_date": "2026-08-21",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0089
+    },
+    {
+      "run_id": "2bb34d761865409b9d0054dee514aceb",
+      "business_date": "2026-08-22",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0082
+    },
+    {
+      "run_id": "e26ba7d9d8624321b9b8a22cb3444108",
+      "business_date": "2026-08-23",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0088
+    },
+    {
+      "run_id": "143578f923d54d349c69dda98dbb28b8",
+      "business_date": "2026-08-24",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.008
+    },
+    {
+      "run_id": "5a01064462ce48ee9c29b845fca8b8c6",
+      "business_date": "2026-08-25",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0082
+    },
+    {
+      "run_id": "ff0340a6eeb4494ca8f0969676ccb4de",
+      "business_date": "2026-08-26",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0083
+    },
+    {
+      "run_id": "bb84507e327d41a08c3f1a8bbb69c91d",
+      "business_date": "2026-08-27",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0081
+    },
+    {
+      "run_id": "ef108ef8487549289fd1d0f30b6bebb5",
+      "business_date": "2026-08-28",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0084
+    },
+    {
+      "run_id": "0061a6f8b3bf4e65a11546b530569066",
+      "business_date": "2026-08-29",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0085
+    },
+    {
+      "run_id": "c8b6ed4be1e84d429a6e3da612d4f208",
+      "business_date": "2026-08-30",
+      "rows_seen": 643,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.008
+    },
+    {
+      "run_id": "096826b1ee224d0aa2b42d931e6fadd9",
+      "business_date": "2026-08-31",
+      "rows_seen": 219,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0077
+    },
+    {
+      "run_id": "5aa2d7d19ab145639bf89fc431448ad1",
+      "business_date": "2026-09-01",
+      "rows_seen": 219,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0081
+    },
+    {
+      "run_id": "be1869292a354dc4869b1f54cec1b133",
+      "business_date": "2026-09-02",
+      "rows_seen": 59,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.009
+    },
+    {
+      "run_id": "b9c719e116824b8ab7dc729cc881105e",
+      "business_date": "2026-09-03",
+      "rows_seen": 59,
+      "inserted": 0,
+      "duplicate": 0,
+      "quarantined": 0,
+      "recovered": 0,
+      "skipped": true,
+      "elapsed_seconds": 0.0079
+    }
+  ],
+  "verification": {
+    "actual": {
+      "orders": 6000,
+      "captured_krw": 203049000,
+      "refunded_krw": 7937000,
+      "net_collected_krw": 195112000
+    },
+    "checks": {
+      "orders": true,
+      "captured_krw": true,
+      "refunded_krw": true,
+      "net_collected_krw": true,
+      "mart_matches_ledger": true,
+      "no_negative_net": true
+    },
+    "passed": true
+  },
+  "idempotent": true,
+  "source_transient_503_injected": true
+}

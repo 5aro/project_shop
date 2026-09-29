@@ -1,0 +1,44 @@
+# 패키지를 설치/빌드하는 도구를 지정합니다. 실행에 필요한 라이브러리 목록과는 별도입니다.
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+
+# 프로젝트 메타데이터입니다. requires-python은 설치 가능한 Python 버전 조건입니다.
+# dependencies는 기본 기능 설치 때 함께 설치하는 패키지 목록입니다.
+[project]
+name = "shopscope"
+version = "1.0.0"
+description = "Reproducible commerce data engineering portfolio"
+requires-python = ">=3.11"
+
+# psycopg는 PostgreSQL, beautifulsoup4는 HTML 파싱, numpy/pandas는 배열/표 처리용입니다.
+# >=는 최소 버전, <는 상한 조건이며 정확한 하나의 버전을 고정한 잠금 파일과 다릅니다.
+dependencies = ["psycopg[binary]>=3.2,<4", "beautifulsoup4>=4.13,<5", "numpy>=2,<3", "pandas>=2.2,<4"]
+
+# pip install -e ".[dev,lab]"처럼 선택 묶음을 설치합니다. semantic과 selenium은 별도 선택 기능입니다.
+[project.optional-dependencies]
+
+# 확장 실험에 필요한 패키지를 묶었습니다.
+# Polars/Dask/PyArrow는 처리 엔진·포맷, SciPy/scikit-learn은 통계, Redis/PyMongo/Neo4j는 저장소 클라이언트입니다.
+lab = ["polars>=1.30,<2", "dask[dataframe]>=2025.1", "pyarrow>=19", "psutil>=6", "scipy>=1.15", "scikit-learn>=1.6", "Pillow>=11", "redis>=5", "pymongo>=4.10", "neo4j>=5"]
+dev = ["pytest>=8"]
+selenium = ["selenium>=4.30"]
+
+# 의미 검색 모델 실행 의존성입니다. 패키지 설치와 모델 파일 다운로드는 별도입니다.
+# 기본 demo만 실행할 때 이 묶음이 반드시 필요한 것은 아닙니다.
+semantic = ["sentence-transformers>=3,<6"]
+
+# 설치 후 shopscope 명령이 shopscope.cli의 main 함수를 호출하게 합니다. python -m shopscope와 같은 진입 함수입니다.
+[project.scripts]
+shopscope = "shopscope.cli:main"
+
+[tool.setuptools]
+
+# 설치할 Python 패키지를 shopscope로 지정합니다.
+# 이 프로젝트는 루트의 sql/web 파일도 참조하므로 소스 폴더의 개발 설치(-e)를 기준으로 읽으세요.
+packages = ["shopscope"]
+
+# pytest가 기본으로 탐색할 테스트 폴더입니다. DB 테스트는 conftest의 임시 DB fixture를 사용합니다.
+[tool.pytest.ini_options]
+testpaths = ["tests"]

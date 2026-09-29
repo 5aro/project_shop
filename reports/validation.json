@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-28",
+  "pytest": {
+    "passed": 19,
+    "elapsed_seconds": 13.19
+  },
+  "end_to_end_demo": "passed",
+  "airflow_dag_test": "passed",
+  "redis": "passed",
+  "neo4j": "passed",
+  "mongo": "blocked_kernel_compatibility",
+  "selenium": "not_executed",
+  "github_ci": "not_executed",
+  "browser_checks": [
+    "channel_filter",
+    "invalid_date",
+    "reset",
+    "navigation",
+    "home_link",
+    "no_console_errors"
+  ]
+}

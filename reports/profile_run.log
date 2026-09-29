@@ -1,0 +1,28 @@
+{
+  "rows": 6000,
+  "entity_resolution": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "canonical_groups": 8
+  },
+  "structured": {
+    "rows": 6000,
+    "mean": 33841.5,
+    "median": 28000.0,
+    "p95": 80000.0,
+    "skew": 0.8334710912723681,
+    "top_10pct_products_order_share": 0.125,
+    "shapiro": {
+      "w": 0.9210112017160603,
+      "p_value": 2.524943020831963e-45,
+      "sample_size": 5000
+    },
+    "outliers": {
+      "iqr": 73,
+      "z_score": 0,
+      "log_z_score": 0,
+      "isolation_forest": 213
+    },
+    "interpretation": "생성기가 만든 유한 분포. 정규성 기각만으로 데이터 오류라 판단하지 않음. IF 5%는 설정값이며 실제 사기율이 아님."
+  }
+}
