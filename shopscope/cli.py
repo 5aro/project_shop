@@ -16,8 +16,8 @@ from .config import DATA, REPORTS
 def main():
     # CLI parser 생성
     parser = argparse.ArgumentParser(description="ShopScope commerce data platform")
-    # subparser 생성
 
+    # subparser 생성
     # dest="command"는 선택한 명령을 args.command에 저장합니다.
     # required=True이므로 명령 없이 실행하면 도움말과 함께 사용 오류가 납니다.
     sub = parser.add_subparsers(dest="command", required=True)
